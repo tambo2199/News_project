@@ -9,6 +9,12 @@ if(ur[1] === undefined)
 {
   url = 'https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=95572d4506ad4ee2aa1b6a536d77c7b7';
 }
+else if(ur[1] == "search=")
+{
+  mess.style.display = "block";
+  mess.style.color = "rgba(255, 255, 255, 0.9)";
+  mess.innerHTML = "Sorry. No news to see here."
+}
 else
 {
   url_split = ur[1].split("=");
