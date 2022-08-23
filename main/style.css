@@ -430,25 +430,17 @@ a{
     margin-bottom: 0px;
     padding: 10px;
     background-color: rgba(255, 255, 255, 0.9);
-    color: rgba(50, 50, 50, 0.9);
+    color: rgba(20, 20, 25, 0.9);;
     border: solid 0px !important;
     border-radius: 12px;
-    animation: a_initial_state 0.3s linear;
   }
-
-  @keyframes a_initial_state {
-    from{background-color: rgba(50, 50, 50, 0.9)}
-    to{background-color: rgba(255, 255, 255, 0.9);
-       color: rgba(50, 50, 50, 0.9);}
-    }
-
     .news_space:hover .url_news a{
       animation: focus_button 0.3s linear forwards;
     }
 
     @keyframes focus_button {
       from{background-color: rgba(255, 255, 255, 0.9);}
-      to{background-color: rgba(50, 50, 50, 0.9);
+      to{background-color: rgba(20, 20, 25, 0.9);;
          color: rgba(255, 255, 255, 0.9);}
       }
 
@@ -459,7 +451,12 @@ a{
     }
 
     .url_news a:hover{
-      transform: scale(1.03) !important;
+      animation: dissolve 0.2s linear forwards !important;
+    }
+
+    @keyframes dissolve {
+      from{background-color: rgba(20, 20, 25, 0.9);}
+        to{background-color: rgba(0, 0, 0, 0);}
     }
 
 }
