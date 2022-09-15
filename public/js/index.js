@@ -92,7 +92,7 @@ function search(){
 
 let page_title = document.getElementById('title').onclick = function()
 {
-  location.href = "";
+  location.href = "/";
 }
 
 document.getElementById('txt').onclick = function()
